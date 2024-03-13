@@ -1,0 +1,20 @@
+﻿services:
+  byallmeans.api:
+    image: byallmeans.api
+    build:
+      context: .
+      target: final
+    ports:
+      - 12:8080
+       
+  byallmeans.database:
+    image: postgres:latest
+    container_name: byallmeans.database
+    environment:
+      - POSTGRES_DB=byallmeans
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+#    volumes:
+#      - ./.containers/products-db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432

@@ -1,0 +1,13 @@
+
+{
+  "sneakers": {
+    "id": "6e63fe02-991f-4d1e-8c0d-7e028147229a",
+    "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "name": "string",
+    "brand": "string",
+    "price": 0,
+    "size": 0,
+    "year": 0,
+    "rating": 0
+  }
+}
