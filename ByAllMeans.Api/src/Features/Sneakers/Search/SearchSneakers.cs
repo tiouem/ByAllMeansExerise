@@ -11,8 +11,8 @@ public sealed class Search : SneakersController
 {
     [HttpPost]
     [Route("Search")]
-    public async Task<AddSneakers.Response> AddSneakers([FromServices] ISender sender,
-        [FromBody] AddSneakers.Command command)
+    public async Task<SearchSneakers.Response> AddSneakers([FromServices] ISender sender,
+        [FromBody] SearchSneakers.Query command)
     {
         return await sender.Send(command);
     }
